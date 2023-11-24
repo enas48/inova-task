@@ -1,0 +1,20 @@
+.layout {
+  min-height: calc(100vh - 72px);
+}
+@media screen and (max-width:769px) {
+  .layout {
+    min-height: calc(100vh - 60px);
+  }
+}
+.message {
+  position: fixed;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+button:disabled, button.disabled {
+  pointer-events: none;
+}
